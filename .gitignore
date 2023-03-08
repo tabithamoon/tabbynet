@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Svelte stuff
+.svelte-kit
+
+# NPM package lock file
+package-lock.json
