@@ -1,20 +1,10 @@
 ### Build 
-FROM node:latest as builder
-
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
-
-### Server
-FROM node:alpine AS server
-
+FROM node:latest
 WORKDIR /app
-COPY --from=builder /usr/src/app/build .
-COPY --from=builder /usr/src/app/package.json .
-COPY --from=builder /usr/src/app/node_modules ./node_modules
+
+COPY . .
+RUN npm install
+RUN npm run build
 
 EXPOSE 3000
 CMD ["node", "index.js"]
