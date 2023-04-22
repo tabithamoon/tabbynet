@@ -1,0 +1,8 @@
+.vscode
+.svelte-kit
+.gitignore
+Dockerfile
+LICENSE
+README.md
+yarn.lock
+package-lock.json

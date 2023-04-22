@@ -1,10 +1,19 @@
 ### Build 
-FROM node:latest
-WORKDIR /app
+FROM node:alpine AS builder
+WORKDIR /source
+
+COPY package.json .
+RUN yarn
 
 COPY . .
-RUN npm install
-RUN npm run build
+RUN yarn build
+
+# Run
+FROM node:alpine AS runner
+WORKDIR /app
+
+COPY --from=builder /source/package.json .
+COPY --from=builder /source/build .
 
 EXPOSE 3000
-CMD ["node", "build/index.js"]
+CMD ["node", "index.js"]
