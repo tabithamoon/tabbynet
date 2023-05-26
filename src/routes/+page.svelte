@@ -22,6 +22,7 @@
         <i class="mi mi-arrow-down mx-auto"></i>
     </div>
 </div>
-<div class="w-full text-center">
-    <p>I make software and memes.</p>
+<div class="w-full text-center pt-12">
+    <p>I'm a software dev and general computer nerd in Brazil.</p>
+    <p>This is my personal site, where I post about whatever.</p>
 </div>
