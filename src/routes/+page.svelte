@@ -4,7 +4,7 @@
 
 <title>the tabbynet</title>
 <div class="flex flex-col w-full xl:h-screen pt-24 xl:pt-0">
-    <div class="flex flex-col xl:flex-row grow items-center justify-center">
+    <div class="flex flex-col xl:flex-row grow items-center justify-center gap-8">
         <div class="flex flex-col text-center xl:text-left text-6xl xl:text-9xl">
             <div>
                 <p>Hi,</p>
@@ -14,8 +14,8 @@
                 <p class="text-2xl xl:text-4xl pl-2">I'm a red panda on the internet.</p>
             </div>
         </div>
-        <div class="p-8">
-            <img class="max-w-sm xl:max-w-lg xl:max-h-96" src="https://api.tinyfox.dev/img?animal=wah" alt="the wah!"/>
+        <div class="px-8 xl:px-0">
+            <img class="w-full xl:max-w-lg xl:max-h-96" src="https://api.tinyfox.dev/img?animal=wah" alt="the wah!"/>
         </div>
     </div>
     <div class="hidden xl:flex w-full h-min pb-8">
